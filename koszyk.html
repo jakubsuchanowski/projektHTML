@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Zawód kibic</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+  <script src="js/koszyk.js"></script>
+        <style>
+            table {          
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td { 
+                border: 1px solid black;
+                padding: 5px;
+            } 
+
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Zawód kibic</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Strona główna
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="koszyk.html">Rezerwacja biletów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Call to Action Well -->
+        
+        <!-- Page Content -->
+        <div class="container">
+      
+          <!-- Heading Row -->
+          <div class="row align-items-center my-5">
+            <div class="col-lg-7">
+            </div>
+            <!-- /.col-lg-8 -->
+            
+            <!-- /.col-md-4 -->
+                <div class="card text-white bg-secondary my-5 py-4 text-center">
+                    <div class="card-body">
+                      <p class="text-white m-0">W tym miejscu możesz zarezerwować bilety na najbliższy domowy mecz reprezentacji. Przy dodawaniu do koszyka wpisz imię i nazwisko osoby, która będzie odpowiedzalna za opłacenie przesyłki. Pamiętaj aby podać poprawny numer telefonu na, który odezwiemy się w celu dokończenia transakcji. </p>
+                    </div>
+                  </div>
+         
+        </div>
+        <!-- /.row -->
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+          <div class="card-body">
+<!-- Content Row -->
+
+            <fieldset>
+    Imie: <br><input type="text" id="nazwa"  title="Wypełnij to pole. Pamiętaj żeby zaczynać dużą literą" /><br><br />
+    Nazwisko:<br> <input type="text" id="cena" title="Wypełnij to pole. Pamiętaj żeby zaczynać dużą literą" /><br><br />
+    Telefon: <br> <input type="tel" id="kolor" placeholder="xxxxxxxxx" title="Wypełnij to pole. Numer telefonu musi miec 9 cyfr" required/><br><br />
+    Liczba sztuk: <br><input type="number" id="liczba"/><br><br />
+
+<div class="row">
+</div>
+    
+    
+        <button onclick="zapisz()">Zapisz produkt do koszyka</button>
+        <button onclick="pokaz()">Wyświetl koszyk</button>
+        <button onclick="wyczysc()">Usuń wszystkie produkty</button><br><br />
+    
+        <div id="pokazEdytuj"> </div>
+
+        <div id="pokazLocalStorage"> </div>
+      </fieldset>
+    
+</div>
+
+
+  
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <p class="m-0 text-center text-white"> &copy; ZK </p>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
